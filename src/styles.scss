@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Fonts
+@font-face {
+  font-family: rodeo;
+  src: url(assets/fonts/IFCINSANERODEOBOLDBold.ttf);
+}
+.rodeo {
+  font-family: rodeo !important;
+}
+
+@font-face {
+  font-family: stagMedium;
+  src: url(assets/fonts/StagSansMedium.otf);
+}
+.stagMedium {
+  font-family: stagMedium !important;
+}
+
+@font-face {
+  font-family: stagSemiBold;
+  src: url(assets/fonts/StagSansSemibold.otf);
+}
+.stagSemiBold {
+  font-family: stagSemiBold !important;
+}
