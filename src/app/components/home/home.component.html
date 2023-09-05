@@ -1,4 +1,6 @@
-<div class="heroMain"></div>
+<div class="heroMain">
+  <img class="logohero" src="../../../assets/logoHero.png" alt="" />
+</div>
 <div class="bgMain">
   <div class="container mx-auto">
     <div class="headerContainer flex items-center gap-8 justify-center">
@@ -9,17 +11,19 @@
 
     <!-- toolbar  -->
     <nav class="relative mt-6">
-      <img class="absolute left-1" src="" alt="Logoimg" />
-      <ul class="list-nav stagSemiBold flex justify-center gap-6">
+      <!-- <img class="absolute left-1" src="" alt="Logoimg" />  -->
+      <ul
+        class="list-nav stagSemiBold flex md:flex-row flex-col items-center justify-center"
+      >
         <li><a href="">SOMOS RS23</a></li>
         <li>
-          <a class="itemActive" href="">Participacion</a>
-          <ul class="subMenu">
+          <a class="" href="">Participación</a>
+          <!-- <ul class="subMenu">
             <li><a href="">Gastronomía</a></li>
             <li><a href="">Cabalgata</a></li>
             <li><a href="">Barrileada 2023</a></li>
             <li><a href="">Gastronomía</a></li>
-          </ul>
+          </ul> -->
         </li>
         <li><a href="">Visitantes</a></li>
         <li><a href="">Videos</a></li>
@@ -28,7 +32,7 @@
     </nav>
 
     <!-- History  -->
-    <div class="historySection mt-20">
+    <div class="historySection md:mt-20 mt-0">
       <div>
         <div class="txtMin">
           <h2 class="rodeo">Historia</h2>
@@ -54,7 +58,9 @@
         <span>PONTE VAQUERO SALTILLO QUE VUELVE LA FIESTA</span>
       </div>
       <div>
-        <img class="logoMin" src="../../../assets/logoBig.png" alt="" />
+        <div class="txtMin">
+          <img class="logoMin" src="../../../assets/logoBig.png" alt="" />
+        </div>
         <div class="img1 imgBigSecond mx-auto"></div>
         <div class="flex flex-col items-center textNumbers">
           <h3 class="stagMedium mt-5">
@@ -72,7 +78,7 @@
     </div>
 
     <!-- SECOND HEADER  -->
-    <div class="headerContainer flex items-center gap-8 justify-center">
+    <div class="headerContainer flex items-center justify-center">
       <img src="../../../assets/rombo-dorado.svg" alt="" />
       <h2 class="rodeo">EDICION 2023</h2>
       <img src="../../../assets/rombo-dorado.svg" alt="" />
@@ -97,7 +103,7 @@
         alt=""
       />
       <img
-        class="absolute -right-20 -bottom-72"
+        class="absolute md:-right-20 -right-16 md:-bottom-72 -bottom-64"
         src="../../../assets/jineteRight.png"
         alt=""
       />
@@ -316,13 +322,42 @@
     ></iframe>
   </div>
 
-  <footer class="mt-6 flex justify-between items-center">
-    <div class="footerTxt">
+  <footer class="mt-6 flex justify-around items-center">
+    <div class="footerTxt flex flex-col gap-1">
       <h2 class="underline stagSemiBold">Visítanos!</h2>
-      <p>Festival Rodeo Saltillo</p>
+      <p class="txtBlack stagSemiBold">Festival Rodeo Saltillo</p>
       <p>Av. Universidad #1060. Saltillo, Coahuila</p>
+      <a href="tel:8442181090">8442181090</a>
+      <a href="mailto:festivalrodeosaltillo.com">Enviar Correo</a>
+      <a class="stagSemiBold" href="www.festivalrodeosaltillo.com"
+        >www.festivalrodeosaltillo.com</a
+      >
     </div>
-    <img src="../../../assets/footer/logoFootermedio.png" alt="" />
-    <img src="../../../assets/footer/LOGO SOMBRERO-05.svg" alt="" />
+    <img
+      class="mediumImg"
+      src="../../../assets/footer/logoFootermedio.png"
+      alt=""
+    />
+    <div class="flex flex-col gap-1">
+      <img
+        class="lastImg"
+        src="../../../assets/footer/LOGO SOMBRERO-05.svg"
+        alt=""
+      />
+      <div class="flex items-center justify-center gap-2 redesGrid">
+        <a href=""
+          ><img src="../../../assets/logosRedes/tiktok.svg" alt=""
+        /></a>
+        <a href=""
+          ><img src="../../../assets/logosRedes/facebook.svg" alt=""
+        /></a>
+        <a href=""
+          ><img src="../../../assets/logosRedes/instagram.svg" alt=""
+        /></a>
+        <a href=""
+          ><img src="../../../assets/logosRedes/xtwitter.svg" alt=""
+        /></a>
+      </div>
+    </div>
   </footer>
 </div>
