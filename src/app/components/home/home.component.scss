@@ -66,6 +66,16 @@
 .headerGold {
   background-color: #85783e;
   height: 250px;
+  h2 {
+    color: white;
+    font-size: 50px;
+    line-height: 0.7;
+    text-align: center;
+    @media (min-width: 768px) {
+      font-size: 146px;
+      margin-top: -22px;
+    }
+  }
 }
 
 .list-nav {
@@ -409,6 +419,7 @@ footer {
   width: 100%;
   background-color: #847946;
   .footerTxt {
+    text-align: center;
     h2 {
       color: white;
       font-size: 50px;
@@ -421,6 +432,9 @@ footer {
     .txtBlack {
       color: black;
       font-size: 25px;
+    }
+    @media (min-width: 768px) {
+      text-decoration: initial;
     }
   }
   .mediumImg {
