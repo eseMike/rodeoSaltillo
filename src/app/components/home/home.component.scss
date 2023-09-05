@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   // background-position: center center;
   background-size: cover;
+  overflow: hidden;
 }
 
 .heroMain {
@@ -16,7 +17,7 @@
   height: 343px;
   background-position-y: 0rem;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: center;
   @media (min-width: 768px) {
     height: 850px;
@@ -60,6 +61,11 @@
       margin-top: -22px;
     }
   }
+}
+
+.headerGold {
+  background-color: #85783e;
+  height: 250px;
 }
 
 .list-nav {
@@ -122,7 +128,7 @@
     h2 {
       font-size: 100px;
       color: #24201d;
-      text-align: center;
+      text-align: start;
       @media (min-width: 768px) {
         font-size: 150px;
         text-align: initial;
@@ -155,31 +161,33 @@
     }
   }
   h3 {
-    font-size: 35px;
+    font-size: 28px;
     max-width: 400px;
+    text-align: center;
+    @media (min-width: 768px) {
+      font-size: 35px;
+      text-align: initial;
+    }
   }
   .txtMin {
     min-height: 300px;
-    p {
-      color: #24201d;
-      margin-top: -23px;
-      @media (min-width: 768px) {
-        max-width: 550px;
-      }
-    }
   }
 
   .logoMin {
-    height: 255px;
+    height: 220px;
     margin: auto;
     position: relative;
-    bottom: -22px;
+    bottom: -35px;
+    @media (min-width: 768px) {
+      height: 255px;
+      bottom: -22px;
+    }
   }
 }
 
 // VIDEO
 .videoCont {
-  background-color: black;
+  background-color: #24201d;
   color: white;
   display: grid;
   place-items: center;
@@ -218,36 +226,47 @@
     .rodeo {
       p {
         color: #847946;
-        font-size: 90px;
+        font-size: 74px;
+        margin-bottom: -17px;
+        @media (min-width: 768px) {
+          margin-bottom: -25px;
+          font-size: 90px;
+        }
       }
       span {
         color: black;
-        font-size: 196px;
-        margin-top: -8rem;
+        font-size: 160px;
+        margin-top: -6rem;
         @media (min-width: 768px) {
           font-size: 250px;
+          margin-bottom: -25px;
+          margin-top: -8rem;
         }
       }
     }
     .hr {
-      height: 250px;
-      width: 2px;
+      height: 133px;
+      width: 8px;
       color: #847946;
       background-color: #847946;
       margin-top: 2rem;
+      @media (min-width: 768px) {
+        height: 202px;
+        margin-top: 3rem;
+      }
     }
   }
   .sepTXT {
     color: #847946;
     font-size: 68px;
-    margin-top: -5rem;
+    margin-top: -6rem;
     @media (min-width: 768px) {
       font-size: 90px;
       margin-top: -6rem;
     }
   }
   img {
-    height: 233px;
+    height: 188px;
     @media (min-width: 768px) {
       height: 390px;
     }
@@ -258,9 +277,12 @@
 .goldDiv {
   background-color: #847946;
   width: 100%;
-  height: 244px;
+  height: 120px;
   display: grid;
   place-items: center;
+  @media (min-width: 768px) {
+    height: 244px;
+  }
   h2 {
     color: white;
     font-size: 25px;
@@ -273,10 +295,14 @@
 
 // GRIDS
 .gridsDiv {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  gap: 2rem;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2rem;
+    justify-items: center;
+  }
   div {
     .imgGrid {
       width: 350px;
@@ -285,6 +311,7 @@
       background-position: center center;
       background-size: cover;
       background-repeat: no-repeat;
+      border: 8px white solid;
     }
 
     .imgFirst {
@@ -302,7 +329,9 @@
     }
     h3 {
       font-size: 45px;
+      line-height: 1;
     }
+
     ul {
       li {
         display: flex;
@@ -326,24 +355,52 @@
 
 // PATROCINADORES LOGOS
 .logos {
+  gap: 1rem;
   img {
-    width: 200px;
+    width: 80px;
+    @media (min-width: 768px) {
+      width: 200px;
+    }
+  }
+  @media (min-width: 768px) {
+    gap: 3rem;
   }
 }
 .logos2 {
+  gap: 0.3rem;
   img {
-    width: 150px;
+    width: 60px;
+    @media (min-width: 768px) {
+      width: 150px;
+    }
   }
 }
 
 .logos3 {
+  gap: 0.3rem;
   img {
-    width: 100px;
+    width: 43px;
+    @media (min-width: 768px) {
+      width: 100px;
+    }
+  }
+  @media (min-width: 768px) {
+    gap: 1rem;
   }
 }
 
 .redesTXT {
   font-size: 40px;
+}
+
+// Google maps
+iframe {
+  width: 100%;
+  height: 400px;
+  @media (min-width: 768px) {
+    width: 100%;
+    height: 450px;
+  }
 }
 
 // FOOTER
@@ -378,5 +435,42 @@ footer {
         width: 30px;
       }
     }
+  }
+}
+
+// clases auxiliares
+.txtUp {
+  position: relative;
+  font-size: 30px;
+  top: -2rem;
+  position: relative;
+  @media (min-width: 768px) {
+    top: -3.5rem;
+  }
+}
+
+.txtWidth {
+  color: #24201d;
+  margin-top: -8px;
+  max-width: 377px;
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: 768px) {
+    max-width: 550px;
+    margin-top: -23px;
+    margin-left: 0;
+  }
+}
+
+.dDesk {
+  display: none;
+  @media (min-width: 768px) {
+    display: grid;
+  }
+}
+.dMob {
+  display: flex;
+  @media (min-width: 768px) {
+    display: none;
   }
 }
